@@ -1,20 +1,24 @@
 body {
     background-color: rgb(255, 255, 255);
-    font: 400 14px 'Open Sans';
+    font: 400 20px 'Open Sans';
     color: rgb(0, 0, 0);
+}
+
+p {
+    margin-bottom: 5px;
 }
 
 .bird {
     display: block;
     width: 30%;
     height: auto;
-    margin: 80px auto 0;
+    margin: 0 auto;
     overflow: hidden;
 }
 
 .brand {
     width: 100%;
-    padding: 10px;
+    padding: 40px 10px;
     background-image: -webkit-linear-gradient(90deg, rgb(133, 48, 222) 0%, rgba(116, 24, 191, 0.68) 100%), url('../images/photodune-4437229-stack-of-business-cards-on-the-table-isolated-s.jpg');
     background-image: -moz-linear-gradient(90deg, rgb(133, 48, 222) 0%, rgba(116, 24, 191, 0.68) 100%), url('../images/photodune-4437229-stack-of-business-cards-on-the-table-isolated-s.jpg');
     background-image: -o-linear-gradient(90deg, rgb(133, 48, 222) 0%, rgba(116, 24, 191, 0.68) 100%), url('../images/photodune-4437229-stack-of-business-cards-on-the-table-isolated-s.jpg');
@@ -27,8 +31,8 @@ body {
 }
 
 .heading {
-    margin: 76px auto 0;
-    font-size: 1.4em;
+    margin: 5% auto 0;
+    font-size: 2.0em;
     font-weight: 700;
     line-height: 1.38;
     text-align: center;
@@ -37,7 +41,6 @@ body {
 
 .mission {
     margin: 15px auto;
-    font-family: Helvetica;
     text-align: center;
     color: rgb(237, 219, 251);
 }
@@ -54,7 +57,8 @@ body {
 }
 
 .article {
-    margin-top: 15px;
+    max-width: 960px;
+    margin: 10px auto 0;
 }
 
 @media (max-width: 480px) {
@@ -63,10 +67,14 @@ body {
         width: 40%;
     }
 
+    body {
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 320px) {
-    .image-device {
+    .hide-small {
         display: none;
     }
 
