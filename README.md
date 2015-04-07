@@ -15,3 +15,11 @@ Simple Product page
 npm install
 npm install gulp
 ```
+
+## Build
+
+```
+gulp
+```
+
+
