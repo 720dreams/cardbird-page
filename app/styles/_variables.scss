@@ -1,0 +1,34 @@
+// http://www.google.com/design/spec/style/color.html#color-color-palette
+$primary: #00BCD4;
+$primary-2nd: #26C6DA;
+$primary-3rd: #00838F;
+$primary-4th: #B2EBF2;
+
+$splash-color: #ffffff;
+
+//$primary: #3F51B5;
+//$primary-2nd: #303F9F;
+//$bg: #E8EAF6;
+
+$bg: #F5F5F5;
+$bg-2nd: #FAFAFA;
+
+$accent: #FF9800;
+
+$error: #F44336;
+$error-2nd: #D32F2F;
+
+$success: #4CAF50;
+$success-2nd: #388E3C;
+
+$deg: 45deg;
+$font-size: 14px;
+
+// http://www.stefanwienert.de/blog/2012/05/18/easy-css-vendor-prefix-mixin-for-sass/
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
