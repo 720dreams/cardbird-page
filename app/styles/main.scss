@@ -157,7 +157,6 @@ body {
 
 }
 
-
 @media (min-width: 1200px) {
   .container {
     width: 960px;
@@ -173,7 +172,7 @@ body {
   }
 
   .upper-logo {
-    width: 100px;
+    max-height: 30px;
   }
 
 }
@@ -218,6 +217,10 @@ body {
 }
 
 @media (max-width: 368px) {
+
+  .upper-logo {
+    max-height: 25px;
+  }
 
   .start-now a {
     margin-top: 10px;
