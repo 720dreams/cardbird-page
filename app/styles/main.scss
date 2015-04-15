@@ -111,7 +111,9 @@ body {
 }
 
 .author {
-  font-size: 12px;
+  a {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
 }
 
 .web-text {
@@ -183,7 +185,7 @@ body {
   }
 
   .margin-top {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .margin-bottom {
@@ -200,10 +202,6 @@ body {
 
   body {
     font-size: 16px;
-  }
-
-  .author {
-    font-size: 10px;
   }
 
   .footer {
