@@ -1,6 +1,5 @@
 {
-  "name": "cardbird-static",
-  "private": true,
+  "name": "cardbird-page",
   "dependencies": {
 
   }
