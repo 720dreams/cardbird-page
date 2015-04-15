@@ -10,7 +10,20 @@ Simple Product page
 
 ```
 npm install
-npm install gulp
+npm install gulp bower
+bower install
+```
+
+## Development
+
+```
+gulp serve
+```
+
+## Build
+
+```
+gulp
 ```
 
 © [720dreams LLC](http://720dreams.com)
