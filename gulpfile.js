@@ -153,7 +153,7 @@ gulp.task('encodeReplace', [], function () {
 
 gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
   gulp.start('revreplace');
-  gulp.start('revreplace');
+  gulp.start('encodeReplace');
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
