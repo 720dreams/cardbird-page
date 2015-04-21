@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6, body {
   width: 100%;
   //background-image: url('/images/cards.jpg');
   background: $primary;
-  @include vendor-prefix(background-image, (linear-gradient(360deg, rgba(0, 188, 212, 0.7) 0%, rgba(0, 188, 212, 0.4) 100%), url('/images/cards.jpg')));
+  @include vendor-prefix(background-image, (linear-gradient(180deg, rgba($primary, 0.8) 0%, rgba($primary-2nd, 0.75) 100%), url('/images/cards.jpg')));
   background-repeat: repeat, no-repeat;
   background-size: 100% 100%, cover;
   background-position: 0% 0%, center center;
