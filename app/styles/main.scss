@@ -22,7 +22,12 @@ h1, h2, h3, h4, h5, h6, body {
 
 .bg-primary {
   background-color: $primary;
-  border-bottom: solid $accent;
+}
+
+.bg-primary-3rd {
+  border-top: solid $accent;
+  background-color: $primary-3rd;
+  color: #ffffff;
 }
 
 .bg-accent {
