@@ -22,17 +22,12 @@ h1, h2, h3, h4, h5, h6, body {
 
 .bg-primary {
   background-color: $primary;
-}
-
-.bg-primary-2nd {
-  background-color: $primary-3rd;
-  color: #ffffff;
-}
-
-.bg-primary-3rd {
-  background-color: $primary-3rd;
-  color: #ffffff;
   border-bottom: solid $accent;
+}
+
+.bg-accent {
+  background-color: $accent;
+  color: #ffffff;
 }
 
 .alert.alert-warning {
@@ -44,15 +39,6 @@ h1, h2, h3, h4, h5, h6, body {
 
 .full-bg {
   padding: 20px 0;
-
-  &.hero {
-    padding-bottom: 0;
-  }
-
-  a {
-    color: $primary-3rd;
-  }
-
   .light {
     color: rgba(255, 255, 255, 0.7);
   }
@@ -60,10 +46,17 @@ h1, h2, h3, h4, h5, h6, body {
 
 .cards {
   width: 100%;
-  background: url('/images/cards.jpg') no-repeat center center fixed;
+  //@include vendor-prefix(background-image, (linear-gradient(180deg, rgba($primary, 0.8) 0%, rgba($primary-2nd, 0.75) 100%), url('/images/cards.jpg')));
+
+  background: linear-gradient(180deg, rgba($primary, 0.6) 0%, rgba($primary-2nd, 0.45) 100%), url('/images/cards.jpg') no-repeat center center fixed;
   background-size: cover;
   background-attachment: scroll;
   padding-bottom: 0;
+
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+
+  color: #FFFFFF;
+
 }
 
 .brand {
@@ -143,25 +136,10 @@ h1, h2, h3, h4, h5, h6, body {
   max-width: 300px;
 }
 
-.text-paragraph {
-  h1, h2, h3, h4, h5 {
-    margin: 30px 0;
+.footer {
+  .stores {
+    margin-top: 40px;
   }
-
-  h1, h2 {
-    border-top: solid rgba(0, 0, 0, 0.2) 1px;
-    padding-top: 15px;
-  }
-
-  p {
-    margin-bottom: 15px;
-  }
-
-  pre {
-    text-align: right;
-    margin-bottom: 40px;
-  }
-
 }
 
 @media (min-width: 1200px) {
