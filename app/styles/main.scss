@@ -46,13 +46,12 @@ h1, h2, h3, h4, h5, h6, body {
 
 .cards {
   width: 100%;
-  //@include vendor-prefix(background-image, (linear-gradient(180deg, rgba($primary, 0.8) 0%, rgba($primary-2nd, 0.75) 100%), url('/images/cards.jpg')));
 
-  background: linear-gradient(180deg, rgba($primary, 0.6) 0%, rgba($primary-2nd, 0.45) 100%), url('/images/cards.jpg') no-repeat center center fixed;
+  background-image: url('/images/cards.jpg');
+  //background: linear-gradient(180deg, rgba($primary, 0.6) 0%, rgba($primary-2nd, 0.45) 100%), url('/images/cards.jpg') no-repeat center center fixed;
   background-size: cover;
   background-attachment: scroll;
   padding-bottom: 0;
-
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 
   color: #FFFFFF;
