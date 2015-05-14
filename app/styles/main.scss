@@ -25,7 +25,6 @@ h1, h2, h3, h4, h5, h6, body {
 }
 
 .bg-primary-3rd {
-  border-top: solid $accent;
   background-color: $primary-3rd;
   color: #ffffff;
 }
@@ -58,13 +57,18 @@ h1, h2, h3, h4, h5, h6, body {
   background-attachment: scroll;
   padding-bottom: 0;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-
   color: #FFFFFF;
-
 }
 
 .brand {
   margin: 30px 0 60px 0;
+}
+
+.pile {
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
 }
 
 .padding {
@@ -73,6 +77,12 @@ h1, h2, h3, h4, h5, h6, body {
 
 .stores {
   width: 100%;
+
+  &.stores-pile {
+    text-align: right;
+    margin-top: 20px;
+  }
+
 }
 
 .stores-image {
@@ -142,6 +152,7 @@ h1, h2, h3, h4, h5, h6, body {
 }
 
 .footer {
+  border-top: solid $accent;
   .stores {
     margin-top: 40px;
   }
@@ -168,6 +179,15 @@ h1, h2, h3, h4, h5, h6, body {
 }
 
 @media (max-width: 768px) {
+
+  h1 {
+    text-align: center;
+  }
+
+  .stores.stores-pile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
   .showcase {
     min-height: 200px;
